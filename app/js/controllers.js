@@ -23,7 +23,7 @@ angular.module('trivia.controllers', [])
 		}
   }])
 
-  .controller('gameCtrl', ['$scope', '$location', 'triviaGame', function($scope, $location, triviaGame) {
+  .controller('gameCtrl', ['$scope', '$location', 'triviaGame', 'chart', function($scope, $location, triviaGame, chart) {
   	
   	if(triviaGame.groups.length === 0)
   		$location.path('/')
@@ -45,6 +45,7 @@ angular.module('trivia.controllers', [])
 
     $scope.givePoint = function(groupNumber) {
       triviaGame.nextQuestion()
+      chart.updateGraph()
     }
 
   }])
@@ -54,3 +55,6 @@ angular.module('trivia.controllers', [])
     $scope.question = triviaGame.getQuestion
   }])
 
+  .controller('chartCtrl', ['$scope', 'triviaGame', function($scope, triviaGame) {
+
+  }])

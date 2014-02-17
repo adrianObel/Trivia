@@ -49,10 +49,16 @@ html, body {
 }
 /* End Card animations*/
 
+.chart-container {
+  background-color: #fff;
+  min-height: 150px;
+  height: 150px;
+  overflow-y: hidden;
+}
 .game-container {
   background-color: #fff;
   border-radius: 4px;
-  min-height: 600px;
+  min-height: 450px;
 }
 
 .list-group-item {
@@ -60,10 +66,7 @@ html, body {
 }
 
 .group-panel, .game-board {
-  min-height: 500px;
-}
-
-.game-board {
+  min-height: 450;
 }
 
 .question-body {
@@ -80,26 +83,26 @@ ol.multiple-choice {
 }
 
 .group-1 {
-  border-top: 3px solid red
+  border-top: 3px solid red;
 }
 .group-2 {
-   border-top: 3px solid blue
+   border-top: 3px solid blue;
 }
 .group-3 {
-   border-top: 3px solid orange
+   border-top: 3px solid orange;
 }
 .group-4 {
-   border-top: 3px solid purple
+   border-top: 3px solid purple;
 }
 .group-5 {
-   border-top: 3px solid black
+   border-top: 3px solid black;
 }
 .group-6 {
-   border-top: 3px solid yellow
+   border-top: 3px solid yellow;
 }
 .group-7 {
-   border-top: 3px solid green
+   border-top: 3px solid green;
 }
 .group-8 {
-   border-top: 3px solid cyan 
+   border-top: 3px solid cyan; 
 }

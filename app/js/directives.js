@@ -20,3 +20,13 @@ angular.module('trivia.directives', [])
       }
     }
   })
+
+  .directive('barChart',['chart', function(chart) {
+    return {
+      restrict: 'A'
+    , link: function(scope, element, attrs) {
+        var container = document.getElementById('bar-chart')
+        chart.createGraph(container)
+      }
+    }
+  }])
