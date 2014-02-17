@@ -1,6 +1,6 @@
 # Trivia!
 
-Simple game made to learn angular :]
+Simple game made in angular :]
 
 ## Testing
 
