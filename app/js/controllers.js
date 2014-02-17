@@ -17,7 +17,7 @@ angular.module('trivia.controllers', [])
 			
 			if(keyPressed === 13) {
 				var numGroups = $scope.numGroups
-				triviaGame.groups(numGroups)
+				triviaGame.createGroups(numGroups)
 				$location.path('game')
 			}
 		}
@@ -25,33 +25,25 @@ angular.module('trivia.controllers', [])
 
   .controller('gameCtrl', ['$scope', '$location', 'triviaGame', function($scope, $location, triviaGame) {
   	
-  	if(triviaGame.groups() == undefined)
+  	if(triviaGame.groups.length === 0)
   		$location.path('/')
 
   	$scope.template = "partials/group-display.html"
 	  
-	  var numGroups = triviaGame.groups()
-  		,	total = []
-
-  	var groups = {
-  		total: []
-  	,	left: []
-  	,	right: []
-		}
-
-  	for(var i = 0; i < numGroups; i++) {
-  		groups.total.push({
-  			number: i + 1
-
-  		})
-  	}
+	  var total = []
+      , groups = {
+      		total: []
+      	,	left: []
+      	,	right: []
+  		}
+ 	  groups.total = triviaGame.groups
   	total = groups.total
   	groups.left = total.splice(0, total.length / 2)
   	groups.right = total 
 
   	$scope.groups = groups
 
-    $scope.givePoint = function() {
+    $scope.givePoint = function(groupNumber) {
       triviaGame.nextQuestion()
     }
 

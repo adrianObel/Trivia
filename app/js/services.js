@@ -12,11 +12,15 @@ angular.module('trivia.services', [])
 			})
 
 		return triviaGame = {
-			groups: function(numGroups) {
-				return numGroups === undefined ?
-					triviaGame.numGroups :
-					triviaGame.numGroups = numGroups
-			}
+			groups: []
+		, createGroups: function(numGroups) {
+			for (var i = 0; i < numGroups; i++) {
+				this.groups.push({
+					number: i + 1
+				, score: 0
+				})
+			};
+		}
 		,	currentQuestion: {}
 		, nextQuestion: function() {
 				if(questionIndex < triviaGame.questions.length)

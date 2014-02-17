@@ -2,7 +2,7 @@
 	<div class="group-panel col-md-2">
 		<div class="row">
 			<div class="list-group">
-				<a class="list-group-item group-{{group.number}}" ng-repeat="group in groups.left" ng-include="template" ng-click="givePoint()"></a>
+				<a class="list-group-item group-{{group.number}}" ng-repeat="group in groups.left" ng-include="template" ng-click="givePoint(group.number)"></a>
 			</div>
 		</div>
 	</div>
@@ -12,7 +12,7 @@
 	<div class="group-panel col-md-2">
 		<div class="row">
 			<div class="list-group">
-				<a href="" class="list-group-item group-{{group.number}}" ng-repeat="group in groups.right" ng-include="template" ng-click="givePoint()"></a>
+				<a href="" class="list-group-item group-{{group.number}}" ng-repeat="group in groups.right" ng-include="template" ng-click="givePoint(group.number)"></a>
 			</div>
 	</div>
 </div>
