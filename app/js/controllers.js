@@ -49,6 +49,10 @@ angular.module('trivia.controllers', [])
         var groupPoints = triviaGame.giveGroupPoint(groupNumber - 1)
         chart.updateGraph(groupPoints)
       }
+      else{
+        triviaGame.endGame()
+        $location.path('/winner')
+      }
     }
 
   }])
@@ -59,5 +63,15 @@ angular.module('trivia.controllers', [])
   }])
 
   .controller('chartCtrl', ['$scope', 'triviaGame', function($scope, triviaGame) {
+  }])
 
+ .controller('winnerCardCtrl', ['$scope','$location', 'triviaGame', function($scope, $location, triviaGame) {
+    if(!triviaGame.winner.score)
+      $location.path('/')
+    $scope.winner = triviaGame.winner
+
+    $scope.newGame = function() {
+      triviaGame.newGame()
+      $location.path('/')
+    }
   }])

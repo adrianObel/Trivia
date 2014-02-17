@@ -13,6 +13,15 @@ angular.module('trivia.services', [])
 
 		return triviaGame = {
 			groups: []
+		, winner: {}
+		,	currentQuestion: {}
+		, groupScores: []
+		, newGame: function() {
+			this.groups = []
+			this.winner = {}
+			this.currentQuestion = {}
+			this.groupScores = []
+		}
 		, createGroups: function(numGroups) {
 			for (var i = 0; i < numGroups; i++) {
 				this.groups.push({
@@ -21,7 +30,6 @@ angular.module('trivia.services', [])
 				})
 			};
 		}
-		,	currentQuestion: {}
 		, nextQuestion: function() {
 				if(questionIndex < triviaGame.questions.length) {
 					triviaGame.currentQuestion = triviaGame.questions[questionIndex++]
@@ -31,7 +39,6 @@ angular.module('trivia.services', [])
 		, getQuestion: function() {
 				return triviaGame.currentQuestion
 			}
-		, groupScores: []
 		, getGroupScores: function() {
 				this.groupScores = []
 				for(var i = 0, j = this.groups.length; i < j; i++) {
@@ -42,6 +49,14 @@ angular.module('trivia.services', [])
 		, giveGroupPoint: function(groupNumber) {
 				this.groups[groupNumber].score++
 				return this.getGroupScores()
+			}
+		, endGame: function() {
+				var winner = this.groups[0]
+				for(var i = 0, j = this.groups.length; i < j; i++) {
+					if(this.groups[i].score > winner.score)
+						winner = this.groups[i]
+				}
+				return this.winner = winner
 			}
 		}
 	}])

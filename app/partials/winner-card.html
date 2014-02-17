@@ -1,0 +1,26 @@
+<div class="row card-holder" ng-init="visible=true">
+  <!-- winner-card -->
+  <div class="winner-card col-md-4 col-md-offset-4" ng-show="visible">
+    <div class="row">
+      <div class="col-md">
+        <h2 class="text-center">Winner!</h2>         
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md">
+        <h3 class="text-center">Group {{winner.number}}</h3>
+      </div>
+    </div>
+     <div class="row">
+      <div class="col-md">
+        <h5 class="text-center">Points: {{winner.score}}</h5>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md">
+        <button class="btn btn-default btn-lg btn-block" ng-click="newGame()">New Game</button>
+      </div>
+    </div>
+  </div>
+  <!-- /winner-card -->
+</div>

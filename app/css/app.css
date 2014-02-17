@@ -17,7 +17,7 @@ html, body {
   position: relative;
   min-height: 500px;
 }
-.start-card, .groups-card {
+.start-card, .groups-card, .winner-card{
   top:50%;
   position: absolute;
   background-color: #fff;

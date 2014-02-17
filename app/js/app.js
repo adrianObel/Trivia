@@ -15,4 +15,9 @@ angular.module('trivia', [
 		,	controller: 'gameCtrl'
 		})
 
+		$routeProvider.when('/winner', {
+			templateUrl: 'partials/winner-card.html'
+		,	controller: 'winnerCardCtrl'
+		})
+
 	}])
