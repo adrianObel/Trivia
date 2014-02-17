@@ -2,7 +2,7 @@
 
 angular.module('trivia.controllers', [])
 	
-	.controller('startCardCtrl', ['$scope', '$location', 'triviaGame', function($scope, $location, $triviaGame) {
+	.controller('startCardCtrl', ['$scope', '$location', 'triviaGame', function($scope, $location, triviaGame) {
 
 		$scope.numbers = /^[0-9]+$/
 
@@ -17,20 +17,20 @@ angular.module('trivia.controllers', [])
 			
 			if(keyPressed === 13) {
 				var numGroups = $scope.numGroups
-				$triviaGame.groups(numGroups)
+				triviaGame.groups(numGroups)
 				$location.path('game')
 			}
 		}
   }])
 
-  .controller('gameCtrl', ['$scope', '$location', 'triviaGame', function($scope, $location, $triviaGame) {
+  .controller('gameCtrl', ['$scope', '$location', 'triviaGame', function($scope, $location, triviaGame) {
   	
-  	if($triviaGame.groups() == undefined)
+  	if(triviaGame.groups() == undefined)
   		$location.path('/')
 
   	$scope.template = "partials/group-display.html"
 	  
-	  var numGroups = $triviaGame.groups()
+	  var numGroups = triviaGame.groups()
   		,	total = []
 
   	var groups = {
@@ -50,6 +50,16 @@ angular.module('trivia.controllers', [])
 
   	$scope.groups = groups
 
+
+  }])
+
+  .controller('gameBoardCtrl', ['$scope', 'triviaGame', function($scope, triviaGame) {
+    $scope.template = 'partials/game-board.html'
+    $scope.question = {
+      number: '#1'
+    , body : 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, tempore, error, delectus vel nobis similique odio eligendi veniam a nesciunt cumque esse possimus unde beatae hic soluta amet odit molestiae.'
+    , multipleChoice: ['Lorem', 'Loren', 'Loaren', 'Loarm']
+    }
 
   }])
 
