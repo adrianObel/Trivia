@@ -6,10 +6,6 @@ html, body {
   height: 100%;
 }
 
-.container {
-  margin-top: auto;
-  margin-bottom: auto;
-}
 .game-title {
   border-bottom: 1px solid #eee;
 }
@@ -105,4 +101,16 @@ ol.multiple-choice {
 }
 .group-8 {
    border-top: 3px solid #667f00; 
+}
+
+.footer {
+  height:25px;
+  position: absolute;
+  bottom: 0;
+  width:100%;
+  text-align: center;
+}
+
+.footer a {
+  color: #eee;
 }
