@@ -83,26 +83,26 @@ ol.multiple-choice {
 }
 
 .group-1 {
-  border-top: 3px solid red;
+  border-top: 3px solid #2f69bf;
 }
 .group-2 {
-   border-top: 3px solid blue;
+   border-top: 3px solid #a2bf2f;
 }
 .group-3 {
-   border-top: 3px solid orange;
+   border-top: 3px solid #bf5a2f;
 }
 .group-4 {
-   border-top: 3px solid purple;
+   border-top: 3px solid #bfa22f;
 }
 .group-5 {
-   border-top: 3px solid black;
+   border-top: 3px solid #772fbf;
 }
 .group-6 {
-   border-top: 3px solid yellow;
+   border-top: 3px solid #bf2f2f;
 }
 .group-7 {
-   border-top: 3px solid green;
+   border-top: 3px solid #00327f;
 }
 .group-8 {
-   border-top: 3px solid cyan; 
+   border-top: 3px solid #667f00; 
 }

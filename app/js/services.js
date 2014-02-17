@@ -33,12 +33,10 @@ angular.module('trivia.services', [])
 			}
 		, groupScores: []
 		, getGroupScores: function() {
-			console.log(this.groups)
 				this.groupScores = []
 				for(var i = 0, j = this.groups.length; i < j; i++) {
 					this.groupScores.push(this.groups[i].score)
 				}
-				console.log(this.groupScores)
 				return this.groupScores
 			}
 		, giveGroupPoint: function(groupNumber) {
