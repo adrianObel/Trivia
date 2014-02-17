@@ -19,7 +19,7 @@ angular.module('trivia.services', [])
 		, newGame: function() {
 			this.groups = []
 			this.winner = {}
-			this.currentQuestion = {}
+			this.currentQuestion = this.questions[0]
 			this.groupScores = []
 			questionIndex = 0
 			
@@ -33,9 +33,9 @@ angular.module('trivia.services', [])
 			};
 		}
 		, nextQuestion: function() {
-				if(questionIndex < triviaGame.questions.length) {
-					triviaGame.currentQuestion = triviaGame.questions[questionIndex++]
-					return true
+				if(questionIndex < this.questions.length) {
+					return this.currentQuestion = this.questions[++questionIndex]
+					
 				}
 			}
 		, getQuestion: function() {
