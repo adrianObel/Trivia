@@ -20,10 +20,3 @@ angular.module('trivia.directives', [])
       }
     }
   })
-
-  .directive('gameBoard', function() {
-    return {
-      restrict: 'E'
-    , templateUrl: 'partials/game-board.html'
-    }
-  })

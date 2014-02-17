@@ -77,3 +77,28 @@ ol.multiple-choice {
   margin-left: -20px;
   font-size: 20px;
 }
+
+.group-1 {
+  border-top: 3px solid red
+}
+.group-2 {
+   border-top: 3px solid blue
+}
+.group-3 {
+   border-top: 3px solid orange
+}
+.group-4 {
+   border-top: 3px solid purple
+}
+.group-5 {
+   border-top: 3px solid black
+}
+.group-6 {
+   border-top: 3px solid yellow
+}
+.group-7 {
+   border-top: 3px solid green
+}
+.group-8 {
+   border-top: 3px solid cyan 
+}

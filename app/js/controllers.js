@@ -41,7 +41,7 @@ angular.module('trivia.controllers', [])
 
   	for(var i = 0; i < numGroups; i++) {
   		groups.total.push({
-  			number: i
+  			number: i + 1
   		})
   	}
   	total = groups.total
