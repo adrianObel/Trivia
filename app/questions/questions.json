@@ -1,0 +1,12 @@
+[
+  {
+    "number": "#1"
+  , "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, maxime, aut vitae explicabo consequatur at quidem hic aliquam dolor laborum laudantium tempore repellat necessitatibus quos ea nam fuga. Esse, est."
+  , "multipleChoice": ["Lorem", "Loren", "Loaren", "Loarm"]
+  }
+, {
+    "number": "#2"
+  , "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, maxime, aut vitae explicabo consequatur at quidem hic aliquam dolor laborum laudantium tempore repellat necessitatibus quos ea nam fuga. Esse, est."
+  , "multipleChoice": ["fap", "fapfap", "fapfapfap", "fap:o"]
+  }
+]

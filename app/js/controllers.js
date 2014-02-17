@@ -55,11 +55,8 @@ angular.module('trivia.controllers', [])
 
   .controller('gameBoardCtrl', ['$scope', 'triviaGame', function($scope, triviaGame) {
     $scope.template = 'partials/game-board.html'
-    $scope.question = {
-      number: '#1'
-    , body : 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, tempore, error, delectus vel nobis similique odio eligendi veniam a nesciunt cumque esse possimus unde beatae hic soluta amet odit molestiae.'
-    , multipleChoice: ['Lorem', 'Loren', 'Loaren', 'Loarm']
-    }
+    $scope.question = triviaGame.currentQuestion
+    console.log(triviaGame.currentQuestion)
 
   }])
 
