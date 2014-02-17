@@ -1,0 +1,18 @@
+<div class="game-container row">
+	<div class="group-panel col-md-2">
+		<div class="row">
+			<div class="list-group">
+				<a class="list-group-item" ng-repeat="group in groups.left" ng-include="template"></a>
+			</div>
+		</div>
+	</div>
+	
+	<game-board class="game-board col-md-8" ></game-board>
+
+	<div class="group-panel col-md-2">
+		<div class="row">
+			<div class="list-group">
+				<a href="" class="list-group-item" ng-repeat="group in groups.right" ng-include="template"></a>
+			</div>
+	</div>
+</div>
