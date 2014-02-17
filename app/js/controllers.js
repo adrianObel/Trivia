@@ -46,8 +46,8 @@ angular.module('trivia.controllers', [])
 
     $scope.givePoint = function(groupNumber) {
       if(triviaGame.nextQuestion()) {
-        triviaGame.giveGroupPoint(groupNumber - 1)
-        chart.updateGraph([2, 5, 20, 23, 56])
+        var groupPoints = triviaGame.giveGroupPoint(groupNumber - 1)
+        chart.updateGraph(groupPoints)
       }
     }
 

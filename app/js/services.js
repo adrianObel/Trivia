@@ -43,7 +43,7 @@ angular.module('trivia.services', [])
 			}
 		, giveGroupPoint: function(groupNumber) {
 				this.groups[groupNumber].score++
-				this.getGroupScores()
+				return this.getGroupScores()
 			}
 		}
 	}])
