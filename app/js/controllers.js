@@ -42,6 +42,7 @@ angular.module('trivia.controllers', [])
   	for(var i = 0; i < numGroups; i++) {
   		groups.total.push({
   			number: i + 1
+
   		})
   	}
   	total = groups.total
@@ -50,13 +51,14 @@ angular.module('trivia.controllers', [])
 
   	$scope.groups = groups
 
+    $scope.givePoint = function() {
+      triviaGame.nextQuestion()
+    }
 
   }])
 
   .controller('gameBoardCtrl', ['$scope', 'triviaGame', function($scope, triviaGame) {
     $scope.template = 'partials/game-board.html'
-    $scope.question = triviaGame.currentQuestion
-    console.log(triviaGame.currentQuestion)
-
+    $scope.question = triviaGame.getQuestion
   }])
 

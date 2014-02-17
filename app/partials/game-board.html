@@ -1,14 +1,14 @@
 <div class="row question-title">
   <div class="col-md-1">
-    <h2>{{question.number}}</h2>
+    <h2>{{question().number}}</h2>
   </div>
 </div>
 <div class="row">
   <div class="col-md question-body">
-    <p>{{question.body}}</p>
+    <p>{{question().body}}</p>
   </div>
 </div>
 
 <ol class="multiple-choice">
-  <li ng-repeat="choice in question.multipleChoice">{{choice}}</li>
+  <li ng-repeat="choice in question().multipleChoice">{{choice}}</li>
 </ol>
