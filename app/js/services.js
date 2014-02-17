@@ -21,6 +21,8 @@ angular.module('trivia.services', [])
 			this.winner = {}
 			this.currentQuestion = {}
 			this.groupScores = []
+			questionIndex = 0
+			
 		}
 		, createGroups: function(numGroups) {
 			for (var i = 0; i < numGroups; i++) {

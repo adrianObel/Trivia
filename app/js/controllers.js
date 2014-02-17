@@ -73,5 +73,6 @@ angular.module('trivia.controllers', [])
     $scope.newGame = function() {
       triviaGame.newGame()
       $location.path('/')
+
     }
   }])
