@@ -23,18 +23,27 @@ angular.module('trivia.services', [])
 		}
 		,	currentQuestion: {}
 		, nextQuestion: function() {
-				if(questionIndex < triviaGame.questions.length)
+				if(questionIndex < triviaGame.questions.length) {
 					triviaGame.currentQuestion = triviaGame.questions[questionIndex++]
+					return true
+				}
 			}
 		, getQuestion: function() {
 				return triviaGame.currentQuestion
 			}
 		, groupScores: []
 		, getGroupScores: function() {
-				for(group in this.groups) {
-					this.groupScores.push(group.score)
+			console.log(this.groups)
+				this.groupScores = []
+				for(var i = 0, j = this.groups.length; i < j; i++) {
+					this.groupScores.push(this.groups[i].score)
 				}
+				console.log(this.groupScores)
 				return this.groupScores
+			}
+		, giveGroupPoint: function(groupNumber) {
+				this.groups[groupNumber].score++
+				this.getGroupScores()
 			}
 		}
 	}])
@@ -45,14 +54,14 @@ angular.module('trivia.services', [])
 		, graph: {}
 		,	createGraph: function(container) {
 	      this.chart = Raphael(container, 0, 0, 400, 150)
-        this.graph = this.chart.barchart(0, 0, 400, 150, [5, 2, 3, 1, 10, 8, 20, 3]);
+        this.graph = this.chart.barchart(0, 0, 400, 150, [0, 0, 0, 0, 0, 0, 0, 0]);
         return this.graph
 			}
-		, updateGraph: function() {
-
-				var tempGraph = this.chart.barchart(0, 0, 400, 150, [2, 5, 6, 3, 3, 6, 2, 5]);
+		, updateGraph: function(scores) {
+				var tempGraph = this.chart.barchart(0, 0, 400, 150, scores);
 				angular.forEach(this.graph.bars, function(value, key) {
-				  value.animate({path: tempGraph.bars[key].attr()["path"]}, 300)
+					if(key < scores.length)
+				  	value.animate({path: tempGraph.bars[key].attr()["path"]}, 300)
 				})
 				tempGraph.remove()
 			}

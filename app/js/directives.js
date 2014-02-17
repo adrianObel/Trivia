@@ -21,7 +21,7 @@ angular.module('trivia.directives', [])
     }
   })
 
-  .directive('barChart',['chart', function(chart) {
+  .directive('barChart',['chart', 'triviaGame', function(chart, triviaGame) {
     return {
       restrict: 'A'
     , link: function(scope, element, attrs) {

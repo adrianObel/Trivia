@@ -30,22 +30,25 @@ angular.module('trivia.controllers', [])
 
   	$scope.template = "partials/group-display.html"
 	  
-	  var total = []
-      , groups = {
+      var groups = {
       		total: []
       	,	left: []
       	,	right: []
+        , len: 0
   		}
+
  	  groups.total = triviaGame.groups
-  	total = groups.total
-  	groups.left = total.splice(0, total.length / 2)
-  	groups.right = total 
+    groups.len = groups.total.length
+  	groups.left = groups.total.slice(0, groups.len / 2)
+  	groups.right = groups.total.slice(groups.len / 2, groups.len)
 
   	$scope.groups = groups
 
     $scope.givePoint = function(groupNumber) {
-      triviaGame.nextQuestion()
-      chart.updateGraph()
+      if(triviaGame.nextQuestion()) {
+        triviaGame.giveGroupPoint(groupNumber - 1)
+        chart.updateGraph([2, 5, 20, 23, 56])
+      }
     }
 
   }])
