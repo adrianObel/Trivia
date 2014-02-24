@@ -1,57 +1,50 @@
-[
-  {
-    "number": "#1"
-  , "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, maxime, aut vitae explicabo consequatur at quidem hic aliquam dolor laborum laudantium tempore repellat necessitatibus quos ea nam fuga. Esse, est."
-  , "multipleChoice": ["Lorem", "Loren", "Loaren", "Loarm"]
-  }
-, {
-    "number": "#2"
-  , "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, maxime, aut vitae explicabo consequatur at quidem hic aliquam dolor laborum laudantium tempore repellat necessitatibus quos ea nam fuga. Esse, est."
-  , "multipleChoice": ["fap", "fapfap", "fapfapfap", "fap:o"]
-  }
-  , {
-    "number": "#3"
-  , "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, maxime, aut vitae explicabo consequatur at quidem hic aliquam dolor laborum laudantium tempore repellat necessitatibus quos ea nam fuga. Esse, est."
-  , "multipleChoice": ["fap", "fapfap", "fapfapfap", "fap:o"]
-  }
-  , {
-    "number": "#4"
-  , "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, maxime, aut vitae explicabo consequatur at quidem hic aliquam dolor laborum laudantium tempore repellat necessitatibus quos ea nam fuga. Esse, est."
-  , "multipleChoice": ["fap", "fapfap", "fapfapfap", "fap:o"]
-  }
-  , {
-    "number": "#5"
-  , "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, maxime, aut vitae explicabo consequatur at quidem hic aliquam dolor laborum laudantium tempore repellat necessitatibus quos ea nam fuga. Esse, est."
-  , "multipleChoice": ["fap", "fapfap", "fapfapfap", "fap:o"]
-  }
-  , {
-    "number": "#6"
-  , "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, maxime, aut vitae explicabo consequatur at quidem hic aliquam dolor laborum laudantium tempore repellat necessitatibus quos ea nam fuga. Esse, est."
-  , "multipleChoice": ["fap", "fapfap", "fapfapfap", "fap:o"]
-  }
-  , {
-    "number": "#7"
-  , "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, maxime, aut vitae explicabo consequatur at quidem hic aliquam dolor laborum laudantium tempore repellat necessitatibus quos ea nam fuga. Esse, est."
-  , "multipleChoice": ["fap", "fapfap", "fapfapfap", "fap:o"]
-  }
-  , {
-    "number": "#8"
-  , "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, maxime, aut vitae explicabo consequatur at quidem hic aliquam dolor laborum laudantium tempore repellat necessitatibus quos ea nam fuga. Esse, est."
-  , "multipleChoice": ["fap", "fapfap", "fapfapfap", "fap:o"]
-  }
-  , {
-    "number": "#9"
-  , "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, maxime, aut vitae explicabo consequatur at quidem hic aliquam dolor laborum laudantium tempore repellat necessitatibus quos ea nam fuga. Esse, est."
-  , "multipleChoice": ["fap", "fapfap", "fapfapfap", "fap:o"]
-  }
-  , {
-    "number": "#10"
-  , "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, maxime, aut vitae explicabo consequatur at quidem hic aliquam dolor laborum laudantium tempore repellat necessitatibus quos ea nam fuga. Esse, est."
-  , "multipleChoice": ["fap", "fapfap", "fapfapfap", "fap:o"]
-  }
-  , {
-    "number": "#11"
-  , "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, maxime, aut vitae explicabo consequatur at quidem hic aliquam dolor laborum laudantium tempore repellat necessitatibus quos ea nam fuga. Esse, est."
-  , "multipleChoice": ["fap", "fapfap", "fapfapfap", "fap:o"]
-  }
-]
+[{
+  "number": "#1",
+  "body": "\u00BFCu\u00E1les son las siglas de un sistema de control distribuido?",
+  "multipleChoice": ["SCD", "DCS", "SCT", "DFT"]
+},
+{
+  "number": "#2",
+  "body": "\u00BFCu\u00E1ndo surgieron los Sistemas de control distribuidos?",
+  "multipleChoice": ["La d\u00E9cada de los 90", "La d\u00E9cada de los 80", "La d\u00E9cada de los 70", "La d\u00E9cada de los 60"]
+},
+{
+  "number": "#3",
+  "body": "\u00BFQu\u00E9 m\u00E9todo se utilizaba antes de la invenci\u00F3n de los  sistemas de control distribuido?",
+  "multipleChoice": ["Tareas de supervisi\u00F3n manual", "Los DTR", "Paneles anal\u00F3gicos", "Ninguna de las anteriores"]
+}, 
+{
+  "number": "#4",
+  "body": "En los sistemas de control Centralizados/Distribuidos", 
+  "multipleChoice": ["El grado de centralizaci\u00F3n es funci\u00F3n del n\u00FAmero y locaci\u00F3n de los ordenadores", "El grado de descentralizaci\u00F3n es funci\u00F3n del n\u00FAmero y locaci\u00F3n de los ordenadores", "El grado de centralizaci\u00F3n  es funci\u00F3n del n\u00FAmero de los ordenadores", "El grado de centralizaci\u00F3n solo depende de la locaci\u00F3n de los ordenadores"]
+}, 
+{
+  "number": "#5", 
+  "body": "En un sistema centralizado los ordenadores est\u00E1n",
+  "multipleChoice": ["Desagrupados", "Agrupados", "De cualquier forma", "No es influyente para su funcionamiento"]
+}, 
+{
+  "number": "#6", 
+  "body": "\u00BFCu\u00E1l de estas es una ventaja de los sistemas distribuidos?", 
+  "multipleChoice": ["Permite sistemas grandes, complejos, online", "Menos capacidad", "La mayor\u00EDa de los procesos son manuales", "El 50% de los procesos son autom\u00E1ticos"]
+}, 
+{
+  "number": "#7", 
+  "body": "\u00BFCu\u00E1l de estos es un inconveniente de los sistemas distribuidos?", 
+  "multipleChoice": ["Entorno hostil", "Menos capacidad", "La mayor\u00EDa de los procesos son manuales", "Las operaciones no son cooperativas"]
+}, 
+{
+  "number": "#8", 
+  "body": "\u00BFQu\u00E9 caracter\u00EDsticas poseen los sistemas distribuidos?", 
+  "multipleChoice": ["Elemento", "Control", "Implementaci\u00F3n", "Todas las anteriores"]
+}, 
+{
+  "number": "#9", 
+  "body": "\u00BFCu\u00E1les de estos son tipos de comunicaci\u00F3n de sistemas distribuidos?", 
+  "multipleChoice": ["Modelo cliente-servidor", "Modelo productor-consumidor", "Modelo de publicaci\u00F3n-suscripci\u00F3n", "Todas las anteriores"]
+}, 
+{
+  "number": "#10", 
+  "body": "\u00BFA qu\u00E9 se dedican los sistemas de transporte de material?", 
+  "multipleChoice": ["Transportan materiales y piezas entre c\u00E9lulas de fabricaci\u00F3n", "Establecen las rutas de transporte entre sistemas", "No existen", "Definen las rutas de salida de los sistemas a la red"]
+}]
